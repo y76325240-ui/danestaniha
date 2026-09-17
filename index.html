@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>دانستنی‌ها</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="stars"></div>
+  <main class="wrap">
+    <section class="hero">
+      <div class="badge">سایت دانستنی‌های شگفت‌انگیز</div>
+      <h1>دانستنی‌ها</h1>
+      <p class="quote">به شما قول میدم که شاید ۱۰ دقیقه گشتن توی این سایت،اطلاعات ۲ سال رو بهتون بده</p>
+      <p>یک موضوع را انتخاب کن تا دانستنی‌هایش ظاهر شود.</p>
+      <div class="hero-actions">
+        <button class="btn" id="random">یک دانستنی تصادفی</button>
+      </div>
+      <div class="search-box">
+        <input id="search" type="search" placeholder="جست‌وجو بین دانستنی‌ها... و اینتر بزن">
+      </div>
+      <div class="stats">
+        <span><strong id="cat-count">0</strong> موضوع</span>
+        <span><strong id="fact-count">0</strong> دانستنی</span>
+      </div>
+    </section>
+
+    <section class="grid" id="grid"></section>
+    <footer>برای باز کردن در VS Code پوشه پروژه را باز کن و فایل index.html را اجرا کن.</footer>
+  </main>
+
+  <div class="overlay" id="overlay"></div>
+  <div class="panel" id="panel">
+    <div class="panel-inner">
+      <div class="panel-head">
+        <h2 id="panel-title">موضوع</h2>
+        <button class="close" id="close" aria-label="بستن">×</button>
+      </div>
+      <div class="facts" id="facts"></div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
